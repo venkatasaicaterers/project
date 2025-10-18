@@ -784,10 +784,23 @@ nav {
 }
 
 .contactus {
-    background: url(../img/contact-bg.png) no-repeat;
+    background: url(../img/contact-bg.png) no-repeat center center;
     background-size: cover;
-    height: 100%;
     color: #fff;
+    padding: 60px 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.contact-heading h1 {
+    color: #f6e64d !important;
+    text-align: center !important;
+    font-weight: 600 !important;
+    font-size: 32px !important;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #ef6c00;
+    padding-bottom: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contactus img {
@@ -795,23 +808,23 @@ nav {
 }
 
 .address-content {
-    display: inline-block;
-    padding-bottom: 30px;
-    padding-top: 10px;
-    margin: 0 auto;
-    /*background: url('../img/chef.png') no-repeat;*/
-    background-position: right bottom;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: auto;
 }
 
 .address-content p {
-    padding-bottom: 10px;
     font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 .address-content h3 {
-    padding-bottom: 20px;
-    margin-top: 20px !important;
-    font-size: 26px !important;
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .company {
@@ -928,7 +941,10 @@ nav {
     box-shadow: 0px 0px 9px 1px #555;
     line-height: 50px;
 }
-
+.address-content a img.whatsapp_float_btn {
+    vertical-align: middle;
+    margin-left: 10px;
+}
 /* 30-10-2018 end */
 
 @media (min-width: 900px) and (max-width: 1390px) {
@@ -942,37 +958,15 @@ nav {
 }
 
 @media only screen and (max-width: 767px) {
-    .parabox p {
-        padding-left: 19px;
+    .address-content {
+        padding: 20px;
+        max-width: 100%;
     }
-    .item1 {
-        width: 50% !important;
+    .contact-heading h1 {
+        font-size: 24px !important;
     }
-    .col-xs-offset-1 {
-        margin-left: 0px !important;
-        width: 100% !important;
-    }
-    .sld_txt h3 {
-        font-size: 27px !important;
-        padding: 20px !important;
-        border-radius: 0px 46px 0px 46px !important;
-        line-height: 41px !important;
-    }
-    .cate-heading {
-        text-align: left;
-        padding-left: 14px;
-    }
-    .sld_txt {
-        width: 93% !important;
-        height: 43vh;
-    }
-    .dropdown-submenu {
-        margin-bottom: 14px;
-    }
-    .event-list ul li {
-        float: left;
-        margin-top: 16px;
-        width: 100%;
+    .address-content p {
+        font-size: 16px;
     }
 }
 
