@@ -192,6 +192,21 @@ nav {
     position: absolute;
 }
 
+.address-content .email {
+    color: #ffffff; /* makes the “Email:” label white */
+}
+
+.address-content .email a {
+    color: #ffffff; /* makes the email address white */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.address-content .email a:hover {
+    color: #00bfff; /* light blue hover effect for visibility */
+    text-decoration: underline;
+}
+
 .onesidedropshadow {
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
@@ -811,8 +826,59 @@ nav {
     background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
     padding: 30px;
     border-radius: 10px;
+    color: #ffffff;
     max-width: 500px;
     margin: auto;
+}
+
+.address-content a {
+    color: #ffffff;
+}
+
+.package-card {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid #444;
+    padding: 25px;
+    border-radius: 12px;
+    transition: 0.3s ease;
+    min-height: 680px;
+}
+.package-card h3 {
+    color: #91ff00;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.package-card p {
+    color: #fff;
+    font-weight: 500;
+}
+.package-card ul {
+    color: #e8f5e9;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+    text-align: left;
+    line-height: 1.6;
+}
+.package-card ul li::before {
+    content: "• ";
+    color: #f39c12;
+}
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+.package-card button {
+    background: #f39c12;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.package-card button:hover {
+    background: #ffa500;
 }
 
 .address-content p {
@@ -900,12 +966,36 @@ nav {
 
 /* 30-10-2018 start */
 
-.sld_vid {
+/* .sld_vid {
     background: url("../img/slider-fresh.jpg") no-repeat;
     padding: 30px 0;
     position: relative;
     top: 80px;
     overflow: hidden;
+} */
+
+.sld_vid {
+    padding: 30px 0;
+    position: relative;
+    top: 80px;
+    overflow: hidden;
+    text-align: center;      /* center images horizontally */
+}
+
+.image-box-left, .image-box-right {
+    display: inline-block;
+    width: 49%;              /* Slightly less than 50% to avoid wrapping */
+    height: 400px;           /* Adjust height */
+    background-size: cover;
+    background-position: center;
+}
+
+.image-box-left {
+    background-image: url("../img/himg1.png");
+}
+
+.image-box-right {
+    background-image: url("../img/himg2.png");
 }
 
 .vid_blk {
@@ -950,10 +1040,10 @@ nav {
 @media (min-width: 900px) and (max-width: 1390px) {
     .contact-heading h1 {
         /*background: url('../img/ribbion-event-small.png') no-repeat center!important;*/
-        padding: 10px;
+        padding: 5px;
     }
     .contact-heading {
-        margin: 20px 0px 0px 0px !important;
+        margin: 10px 0px 0px 0px !important;
     }
 }
 
