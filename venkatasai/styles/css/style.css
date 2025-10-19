@@ -207,6 +207,12 @@ nav {
     text-decoration: underline;
 }
 
+.col-md-24 p {
+    color: white;
+    margin: 0;
+    padding-left: 20px; /* adjust spacing */
+}
+
 .onesidedropshadow {
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
@@ -910,8 +916,9 @@ nav {
 }
 
 .land-phone {
-    background: url('../img/land-icon.png') no-repeat scroll 10px 4px;
-    padding-left: 50px;
+    display: flex;
+    align-items: center; /* vertically center icon with text */
+    gap: 5px;            /* space between number and icon */
 }
 
 .email {
@@ -1032,6 +1039,27 @@ nav {
     box-shadow: 0px 0px 9px 1px #555;
     line-height: 50px;
 }
+
+.whatsapp_float_btn {
+    display: inline-block;
+}
+
+#backToTop {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #f6e64d;
+    color: black;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#backToTop:hover {
+    background-color: #e5d03f;
+}
+
 .address-content a img.whatsapp_float_btn {
     vertical-align: middle;
     margin-left: 10px;
