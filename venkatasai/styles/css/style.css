@@ -192,6 +192,21 @@ nav {
     position: absolute;
 }
 
+.address-content .email {
+    color: #ffffff; /* makes the “Email:” label white */
+}
+
+.address-content .email a {
+    color: #ffffff; /* makes the email address white */
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.address-content .email a:hover {
+    color: #00bfff; /* light blue hover effect for visibility */
+    text-decoration: underline;
+}
+
 .onesidedropshadow {
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
@@ -811,8 +826,13 @@ nav {
     background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay for readability */
     padding: 30px;
     border-radius: 10px;
+    color: #ffffff;
     max-width: 500px;
     margin: auto;
+}
+
+.address-content a {
+    color: #ffffff;
 }
 
 .address-content p {
