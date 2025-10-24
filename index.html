@@ -1,0 +1,1243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venkata Sai Caterers provides professional catering services in Tirupati, Tirumala, Vijayawada, Indupalli, and Hyderabad. We offer vegetarian & non-vegetarian food for weddings, birthdays, and corporate events.">
+    <meta name="keywords" content="Catering Services Tirupati, Wedding Caterers Tirupati, Food Catering Vijayawada, Catering Services Hyderabad, Andhra Pradesh Caterers, Telangana Catering Services">
+    <meta name="robots" content="index,follow">
+    <meta name="title" content="Venkata Sai Catering Services Vijayawada, Wedding Caterers in Vijayawada , Wedding Planning Services, Food Catering Services in India, Vegetarian Food Catering Services Vijayawada, Non-Vegetarian Food Catering Services Vijayawada">
+
+    <title>Venkata Sai Caterers | Food & Wedding Catering Services in Tirupati, Vijayawada, Hyderabad</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Venkata Sai Caterers | Wedding & Event Catering Services in Tirupati & Vijayawada">
+    <meta property="og:description" content="Professional catering services in Tirupati, Tirumala, Vijayawada, Indupalli, and Hyderabad. Specializing in vegetarian and non-vegetarian catering for weddings, birthdays, and corporate events.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://venkatasaicaterers.github.io/project/venkatasai/index.html">
+    <meta property="og:image" content="https://venkatasaicaterers.github.io/project/venkatasai/images/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Venkata Sai Caterers | Catering Services in Tirupati, Vijayawada & Hyderabad">
+    <meta name="twitter:description" content="Professional wedding and event catering services in Tirupati, Tirumala, Vijayawada, Indupalli, and Hyderabad.">
+    <meta name="twitter:image" content="https://venkatasaicaterers.github.io/project/venkatasai/images/logo.png">
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://venkatasaicaterers.github.io/project/venkatasai/images/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600,700,800,900" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Mobile-First Responsive CSS */
+        :root {
+            --primary-color: #043b74;
+            --accent-color: #f6e64d;
+            --secondary-color: #3f6028;
+            --text-color: #333;
+            --light-text: #fff;
+        }
+        
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+            overflow-x: hidden;
+            padding-top: 80px; /* For fixed navbar */
+        }
+        
+        /* Mobile Navigation */
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 10px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        
+        .navbar-brand {
+            color: var(--light-text) !important;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 5px 10px;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .nav-link {
+            color: var(--light-text) !important;
+            font-weight: 500;
+            padding: 10px 15px !important;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: var(--primary-color) !important;
+            background-color: var(--accent-color);
+        }
+        
+        /* Mobile Menu Dropdown Fixes */
+        .dropdown-menu {
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 0;
+        }
+        
+        .dropdown-item {
+            color: var(--light-text);
+            padding: 10px 15px;
+        }
+        
+        .dropdown-item:hover {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+        }
+        
+        /* Mobile Menu Improvements */
+        @media (max-width: 991px) {
+            .dropdown-menu {
+                position: static !important;
+                float: none;
+                width: 100%;
+                margin-top: 0;
+                border: none;
+                box-shadow: none;
+            }
+            
+            .dropdown-submenu .dropdown-menu {
+                position: static !important;
+                margin-left: 15px;
+            }
+            
+            .multi-column-dropdown {
+                column-count: 1 !important;
+            }
+            
+            .dropdown-menu.columns-4 {
+                min-width: 100% !important;
+                height: auto !important;
+                overflow: visible;
+            }
+        }
+        
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(rgba(4, 59, 116, 0.8), rgba(4, 59, 116, 0.8)), url('styles/img/bg-image.jpg') no-repeat center center;
+            background-size: cover;
+            color: var(--light-text);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+        
+        .hero-section h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+        
+        .hero-section p {
+            font-size: 1rem;
+            margin-bottom: 30px;
+        }
+        
+        .btn-primary {
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            font-weight: 700;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e5d03f;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Section Styling */
+        .section-title {
+            text-align: center;
+            margin: 40px 0 30px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background-color: var(--accent-color);
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        
+        /* Events Section */
+        .events-section {
+            padding: 60px 0;
+        }
+        
+        .event-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            height: 100%;
+        }
+        
+        .event-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .event-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        /* Gallery Section */
+        .gallery-section {
+            padding: 60px 0;
+            background-color: #f9f9f9;
+        }
+        
+        .gallery-item {
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: all 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+        
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 8px;
+            text-align: center;
+            font-size: 0.9rem;
+            transform: translateY(100%);
+            transition: transform 0.3s;
+        }
+        
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+        
+        /* Image Rotation Indicator */
+        .rotation-indicator {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        .rotation-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        
+        .rotation-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #ddd;
+            transition: background-color 0.3s;
+        }
+        
+        .rotation-dot.active {
+            background-color: var(--accent-color);
+        }
+        
+        /* Packages Section */
+        .packages-section {
+            padding: 60px 0;
+        }
+        
+        .package-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s;
+            height: 100%;
+            border-top: 5px solid var(--accent-color);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .package-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        
+        .package-card h3 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        .package-card ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 20px 0;
+            flex-grow: 1;
+        }
+        
+        .package-card ul li {
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .package-card ul li:before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+        }
+        
+        .package-price {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-align: center;
+            margin: 15px 0;
+        }
+        
+        .book-btn {
+            background-color: #25D366;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-weight: 600;
+            border-radius: 30px;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 100%;
+        }
+        
+        .book-btn:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 60px 0;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        
+        .contact-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: var(--accent-color);
+            min-width: 30px;
+        }
+        
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .map-container {
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: #212121;
+            color: var(--light-text);
+            padding: 30px 0 20px;
+        }
+        
+        .social-icons a {
+            color: var(--light-text);
+            font-size: 1.5rem;
+            margin-right: 15px;
+            transition: all 0.3s;
+        }
+        
+        .social-icons a:hover {
+            color: var(--accent-color);
+        }
+        
+        /* Back to Top Button */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s;
+            text-decoration: none;
+        }
+        
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        /* Music Player Styles */
+        .music-player {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 50px;
+            padding: 10px 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        
+        .music-btn {
+            background: var(--primary-color);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .music-btn:hover {
+            background: #032a55;
+            transform: scale(1.1);
+        }
+        
+        .volume-control {
+            width: 80px;
+            height: 5px;
+            background: #ddd;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        .volume-level {
+            position: absolute;
+            height: 100%;
+            background: var(--accent-color);
+            border-radius: 10px;
+            width: 50%;
+        }
+        
+        .music-label {
+            font-size: 0.8rem;
+            color: var(--primary-color);
+            font-weight: 600;
+        }
+        
+        /* Mobile-Specific Improvements */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 70px;
+            }
+            
+            .hero-section {
+                padding: 60px 0 40px;
+            }
+            
+            .hero-section h1 {
+                font-size: 1.5rem;
+            }
+            
+            .section-title {
+                font-size: 1.5rem;
+            }
+            
+            .package-card {
+                margin-bottom: 20px;
+            }
+            
+            .contact-section .row > div {
+                margin-bottom: 30px;
+            }
+            
+            /* Fix for mobile menu items */
+            .dropdown-menu.multi-column {
+                max-height: 400px;
+                overflow-y: auto;
+            }
+            
+            .multi-column-dropdown {
+                column-count: 1;
+            }
+            
+            /* Music player mobile adjustments */
+            .music-player {
+                bottom: 80px;
+                left: 10px;
+                padding: 8px 12px;
+            }
+            
+            .volume-control {
+                width: 60px;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .hero-section h1 {
+                font-size: 1.3rem;
+            }
+            
+            .hero-section p {
+                font-size: 0.9rem;
+            }
+            
+            .section-title {
+                font-size: 1.3rem;
+            }
+            
+            .package-card {
+                padding: 20px 15px;
+            }
+            
+            .gallery-item img {
+                height: 150px;
+            }
+            
+            .music-player {
+                flex-direction: column;
+                border-radius: 20px;
+                padding: 10px;
+                gap: 5px;
+            }
+            
+            .volume-control {
+                width: 100%;
+            }
+        }
+        
+        /* Ensure compatibility with existing styles */
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: #3f6028;
+        }
+
+        .navbar-default .navbar-toggle {
+            border-color: #3f6028;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #000;
+        }
+        
+        /* Fix for existing dropdown styles on mobile */
+        @media (max-width: 991px) {
+            .dropdown-submenu > .dropdown-menu {
+                position: static !important;
+                margin-left: 15px;
+            }
+            
+            .dropdown-menu.columns-4 {
+                min-width: 100% !important;
+            }
+            
+            .cate-heading {
+                font-size: 18px !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-player">
+        <span class="music-label">Music</span>
+        <button class="music-btn" id="playPauseBtn">
+            <i class="fas fa-pause" id="playPauseIcon"></i>
+        </button>
+        <div class="volume-control" id="volumeControl">
+            <div class="volume-level" id="volumeLevel"></div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-utensils me-2"></i>Venkata Sai Caterers
+                <small class="d-block" style="font-size: 0.7rem;">Since 1975</small>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#packages">Packages</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Sweets</a></li>
+                            <li><a class="dropdown-item" href="#">Hots</a></li>
+                            <li><a class="dropdown-item" href="#">Fries & Papads-Odiyalu</a></li>
+                            <li><a class="dropdown-item" href="#">Roti Chutneys & Tiffins</a></li>
+                            <li><a class="dropdown-item" href="#">Gujju Kuralu</a></li>
+                            <li><a class="dropdown-item" href="#">Kurmas & Pulusu Kuralu</a></li>
+                            <li><a class="dropdown-item" href="#">Aavakaya Chutneys</a></li>
+                            <li><a class="dropdown-item" href="#">Chicken & Mutton Gravies</a></li>
+                            <li><a class="dropdown-item" href="#">Chat & Roti Items</a></li>
+                            <li><a class="dropdown-item" href="#">Fish & Prawns Items</a></li>
+                            <li><a class="dropdown-item" href="#">Chineese Items</a></li>
+                            <li><a class="dropdown-item" href="#">Biryanies & Pulivore</a></li>
+                            <li><a class="dropdown-item" href="#">Dals & Sambars</a></li>
+                            <li><a class="dropdown-item" href="#">Welcome Drinks</a></li>
+                            <li><a class="dropdown-item" href="#">Hot & Sour Powders</a></li>
+                            <li><a class="dropdown-item" href="#">Charulu & Rasam</a></li>
+                            <li><a class="dropdown-item" href="#">65 Fries</a></li>
+                            <li><a class="dropdown-item" href="#">Biryanies (NonVeg)</a></li>
+                            <li><a class="dropdown-item" href="#">Curd chutneys</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Venkata Sai Caterers & Events</h1>
+                    <p class="lead">Since 1975 - Serving Happiness Through Food</p>
+                    <p>Professional catering services in Tirupati, Vijayawada, Hyderabad & across AP & TS</p>
+                    <a href="#contact" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="row">
+                <div class="col-12">
+                    <div class="about-content">
+                        <p>We serve tasty Food for Every Occasion in Tirupati, Vijayawada, Hyderabad (any location in AP & TS).</p>
+                        <p>Venkata Sai Catering provides fresh, tasty, and good-quality food for all kinds of functions — like weddings, parties, family events, and office programs.</p>
+                        <p>We prepare both vegetarian and non-vegetarian dishes, and you can choose your own menu based on what you like. All our food is made with natural and high-quality ingredients, checked and approved by government food inspectors for safety and cleanliness.</p>
+                        <p>Our experienced team cooks with love and serves with a smile. We also help you plan the menu, decoration, and service to make your event more special and enjoyable.</p>
+                        <p>We serve from 100 people to any number of guests, based on your need. You will get great taste, best quality, and good prices all in one place.</p>
+                        <div class="text-center mt-4">
+                            <div class="highlight-box p-3 bg-warning rounded">
+                                <p class="mb-0 fw-bold">🌸 Venkata Sai Caterers not only serve food — We serve happiness to you and your guests! 🌸</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events-section">
+        <div class="container">
+            <h2 class="section-title">Our Events</h2>
+            <p class="text-center mb-5">We provide catering for all types of special occasions, at any location, based on your needs.</p>
+            
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-glass-cheers"></i>
+                        </div>
+                        <h4>Weddings</h4>
+                        <p>Make your special day unforgettable with our exquisite wedding catering services.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-birthday-cake"></i>
+                        </div>
+                        <h4>Birthdays</h4>
+                        <p>Celebrate in style with our delicious food that pleases guests of all ages.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h4>Corporate Events</h4>
+                        <p>Impress your colleagues and clients with our professional corporate catering.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="event-card">
+                        <div class="event-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Private Parties</h4>
+                        <p>From intimate gatherings to large celebrations, we've got you covered.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-12 text-center">
+                    <p>We also cater for: Festivals, Baby Namings, Fundraisers, Conferences, and more!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title">Food Gallery</h2>
+            <p class="text-center mb-4">Discover our delicious offerings that will make your event unforgettable</p>
+            
+            <div class="row" id="gallery-container">
+                <!-- Images will be populated by JavaScript -->
+            </div>
+            
+            <div class="rotation-indicator">
+                <p>Images automatically rotate every 10 seconds</p>
+                <div class="rotation-dots">
+                    <div class="rotation-dot active" id="dot1"></div>
+                    <div class="rotation-dot" id="dot2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section id="packages" class="packages-section">
+        <div class="container">
+            <h2 class="section-title">Catering Packages</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="package-card">
+                        <h3>Package 1</h3>
+                        <ul>
+                            <li>Sweets 1</li>
+                            <li>Hots 1</li>
+                            <li>Biryani rice 1</li>
+                            <li>Raita 1</li>
+                            <li>Paneer Kurma 1</li>
+                            <li>Dal curry 1</li>
+                            <li>Fry curries 1</li>
+                            <li>Gravy curries 1</li>
+                            <li>Chutneys 1</li>
+                            <li>Liquid items 1</li>
+                            <li>Rice 1</li>
+                            <li>Ghee</li>
+                            <li>Papads 1</li>
+                            <li>Curd 1</li>
+                            <li>Loose water 1</li>
+                            <li>Side dishes & etc</li>
+                        </ul>
+                        <div class="package-price">₹180 – ₹220</div>
+                        <button class="book-btn" data-package="Package 1" data-price="₹180 – ₹220">
+                            <i class="fab fa-whatsapp"></i> Book Package 1
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="package-card">
+                        <h3>Package 2</h3>
+                        <ul>
+                            <li>Sweets 2</li>
+                            <li>Hots 1</li>
+                            <li>Biryani rice 1</li>
+                            <li>Raita 1</li>
+                            <li>Paneer Kurma 1</li>
+                            <li>Dal curry 1</li>
+                            <li>Fry curries 2</li>
+                            <li>Gravy curries 1</li>
+                            <li>Chutneys 2</li>
+                            <li>Liquid items 1</li>
+                            <li>Powder items 1</li>
+                            <li>Rice 1</li>
+                            <li>Ghee</li>
+                            <li>Papads 1</li>
+                            <li>Curd 1</li>
+                            <li>Welcome drink 1</li>
+                            <li>Loose water 1</li>
+                        </ul>
+                        <div class="package-price">₹250 – ₹270</div>
+                        <button class="book-btn" data-package="Package 2" data-price="₹250 – ₹270">
+                            <i class="fab fa-whatsapp"></i> Book Package 2
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="package-card">
+                        <h3>Package 3</h3>
+                        <ul>
+                            <li>Sweets 2</li>
+                            <li>Hots 1</li>
+                            <li>Biryani rice 2</li>
+                            <li>Raita 1</li>
+                            <li>Paneer Kurma 1</li>
+                            <li>Dal curry 1</li>
+                            <li>Fry curries 3</li>
+                            <li>Gravy curries 1</li>
+                            <li>Chutneys 2</li>
+                            <li>Liquid items 2</li>
+                            <li>Powder items 1</li>
+                            <li>Rice 1</li>
+                            <li>Ghee</li>
+                            <li>Papads(2) 1</li>
+                            <li>Curd 1</li>
+                            <li>Welcome drink 1</li>
+                            <li>Water bottle 500ml 1</li>
+                            <li>Ice creams(2) 1</li>
+                            <li>Pan 1</li>
+                        </ul>
+                        <div class="package-price">₹300 – ₹320</div>
+                        <button class="book-btn" data-package="Package 3" data-price="₹300 – ₹320">
+                            <i class="fab fa-whatsapp"></i> Book Package 3
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3">
+                    <div class="package-card">
+                        <h3>Package 4</h3>
+                        <ul>
+                            <li>Sweets 3</li>
+                            <li>Hots 2</li>
+                            <li>Biryani rice 2</li>
+                            <li>Raita 1</li>
+                            <li>Paneer Kurma 1</li>
+                            <li>Dal curry 1</li>
+                            <li>Fry curries 3</li>
+                            <li>Gravy curries 2</li>
+                            <li>Chutneys 2</li>
+                            <li>Liquid items 2</li>
+                            <li>Powder items 1</li>
+                            <li>Rice 1</li>
+                            <li>Ghee</li>
+                            <li>Papads(3) 1</li>
+                            <li>Curd 1</li>
+                            <li>Welcome drink(2) 1</li>
+                            <li>Water bottle 500ml 1</li>
+                            <li>Ice creams(3) 1</li>
+                            <li>Pan(3) 1</li>
+                            <li>Fruit salad(5) 1</li>
+                        </ul>
+                        <div class="package-price">₹350 – ₹370</div>
+                        <button class="book-btn" data-package="Package 4" data-price="₹350 – ₹370">
+                            <i class="fab fa-whatsapp"></i> Book Package 4
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <p class="lead">Custom packages available based on your specific requirements and budget!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title text-white">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Venkata Sai Caterers</h3>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Address</h5>
+                                <p>#2-97, Near Sai Baba Temple,<br>Indupalli, Krishna District,<br>AP - 521311, India (near Vijayawada)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>📞 94404 21005 (Call any time)</p>
+                                <a href="tel:+919440421005" class="btn btn-outline-light mt-2">Call Now</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h5>WhatsApp</h5>
+                                <p>+91-94404 21005</p>
+                                <a href="https://wa.me/919440421005" target="_blank" class="whatsapp-btn">
+                                    <i class="fab fa-whatsapp me-2"></i> Message on WhatsApp
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5>Email</h5>
+                                <p>venkatasaicaterers.com@gmail.com</p>
+                                <a href="mailto:venkatasaicaterers.com@gmail.com" class="btn btn-outline-light mt-2">Send Email</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div>
+                                <h5>Organizers</h5>
+                                <p>CH VasanthaRao & CH Rambabu</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-7">
+                    <div class="map-container">
+                        <iframe
+                            width="100%"
+                            height="450"
+                            style="border:0;"
+                            loading="lazy"
+                            allowfullscreen
+                            src="https://www.google.com/maps?q=16.469996,80.876694&hl=en&z=15&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">© Copyright 2023. All rights reserved by VenkataSai Caterers, India</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/venkatasaicaterers/" target="_blank">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script>
+        
+        // Image Rotation Functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Image sets
+            const firstSet = [
+                { src: 'styles/img/pick1.png', caption: 'Halwa' },
+                { src: 'styles/img/pick15.jpg', caption: 'Chicken Gujju Kura' },
+                { src: 'styles/img/pick3.png', caption: 'Avakaya Chutney' },
+                { src: 'styles/img/pick4.png', caption: 'Biryanies' },
+                { src: 'styles/img/pick14.jpg', caption: 'Prawns Gujju Kura' },
+                { src: 'styles/img/pick6.png', caption: 'Juices' },
+                { src: 'styles/img/pick5.png', caption: 'Ice Creams' },
+                { src: 'styles/img/pick8.png', caption: 'Fruits Salad' }
+            ];
+            
+            const secondSet = [
+                { src: 'styles/img/pick13.jpg', caption: 'Fish Iguru' },
+                { src: 'styles/img/pick10.png', caption: 'Gujju Kuralu' },
+                { src: 'styles/img/pick11.png', caption: 'Hots' },
+                { src: 'styles/img/pick12.png', caption: 'Fries' },
+                { src: 'styles/img/pick9.png', caption: 'Gulab Jamun' },
+                { src: 'styles/img/pick2.png', caption: 'Breakfast' },
+                { src: 'styles/img/pick7.png', caption: 'Pulihora' },
+                { src: 'styles/img/pick16.jpg', caption: 'Mutton Kura' }
+            ];
+            
+            const galleryContainer = document.getElementById('gallery-container');
+            const dot1 = document.getElementById('dot1');
+            const dot2 = document.getElementById('dot2');
+            
+            let currentSet = firstSet;
+            let rotationInterval;
+            
+            // Function to render gallery images
+            function renderGallery(images) {
+                galleryContainer.innerHTML = '';
+                
+                images.forEach((image, index) => {
+                    const colClass = index < 4 ? 'col-6 col-md-4 col-lg-3' : 'col-6 col-md-4 col-lg-3';
+                    
+                    const galleryItem = document.createElement('div');
+                    galleryItem.className = colClass;
+                    
+                    galleryItem.innerHTML = `
+                        <div class="gallery-item">
+                            <img src="${image.src}" alt="${image.caption}" class="img-fluid">
+                            <div class="gallery-caption">${image.caption}</div>
+                        </div>
+                    `;
+                    
+                    galleryContainer.appendChild(galleryItem);
+                });
+            }
+            
+            // Function to rotate images
+            function rotateImages() {
+                if (currentSet === firstSet) {
+                    currentSet = secondSet;
+                    dot1.classList.remove('active');
+                    dot2.classList.add('active');
+                } else {
+                    currentSet = firstSet;
+                    dot1.classList.add('active');
+                    dot2.classList.remove('active');
+                }
+                
+                renderGallery(currentSet);
+            }
+            
+            // Initialize gallery with first set
+            renderGallery(firstSet);
+            
+            // Start rotation every 10 seconds
+            rotationInterval = setInterval(rotateImages, 10000);
+            
+            // WhatsApp Booking Functionality
+            const bookButtons = document.querySelectorAll('.book-btn');
+            
+            bookButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const packageName = this.getAttribute('data-package');
+                    const packagePrice = this.getAttribute('data-price');
+                    
+                    // Create WhatsApp message
+                    const message = `Hello Venkata Sai Caterers! I'm interested in booking ${packageName} (${packagePrice}). Please provide me with more details.`;
+                    
+                    // Encode the message for URL
+                    const encodedMessage = encodeURIComponent(message);
+                    
+                    // Create WhatsApp URL
+                    const whatsappURL = `https://wa.me/919440421005?text=${encodedMessage}`;
+                    
+                    // Open WhatsApp in new tab
+                    window.open(whatsappURL, '_blank');
+                });
+            });
+            
+            // Back to top button
+            const backToTopButton = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopButton.classList.add('active');
+                } else {
+                    backToTopButton.classList.remove('active');
+                }
+            });
+            
+            backToTopButton.addEventListener('click', function(e) {
+                e.preventDefault();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            });
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    if(targetId === '#') return;
+                    
+                    const targetElement = document.querySelector(targetId);
+                    if(targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 70,
+                            behavior: 'smooth'
+                        });
+                        
+                        // Close mobile menu after clicking
+                        const navbarToggler = document.querySelector('.navbar-toggler');
+                        const navbarNav = document.querySelector('.navbar-collapse');
+                        
+                        if(navbarToggler && !navbarToggler.classList.contains('collapsed')) {
+                            navbarToggler.click();
+                        }
+                    }
+                });
+            });
+            
+            // Update active nav link on scroll
+            window.addEventListener('scroll', function() {
+                let current = '';
+                const sections = document.querySelectorAll('section');
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if(pageYOffset >= (sectionTop - 100)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                
+                document.querySelectorAll('.nav-link').forEach(link => {
+                    link.classList.remove('active');
+                    if(link.getAttribute('href') === `#${current}`) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
